@@ -1,0 +1,61 @@
+/* Header START*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    .scroll-imgchange{
+        img:first-child{
+            display: none;
+        }
+        img:last-child{ 
+            display: inherit!important;
+        }
+        li:first-child{
+            display: none;
+        }
+        li:last-child{
+            display: inherit!important;
+        }
+    }
+    .scroll-headerchange{
+        @include transition
+    }
+    .headerbar{
+        nav{
+            .collapse{
+                @media(min-width: 991.98px) {
+                    flex: 1;
+                }
+            }
+        }
+        .collapsing{
+            position: relative;
+            overflow: hidden;
+            height: 0;
+            transition: height .35s ease;
+        }
+        .logo_header{
+            z-index: 3;
+            li{
+                height: 60px;
+                max-width: 170px;
+                img{
+                    width: 100%;
+                    height: 100%!important;
+                    object-fit: contain;
+                }
+            }
+            li:last-child{
+                @media(min-width: 991.98px) {
+                    display: none;
+                }
+            }
+            li:first-child{
+                @media(max-width: 991.98px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* Header END*/

@@ -1,0 +1,53 @@
+/* General style START*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+body {
+    overflow-x: hidden;
+
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+    font-family: $LatoR;
+    h2{
+        font-family: $LatoB;
+    }
+}
+
+/* General style END*/
